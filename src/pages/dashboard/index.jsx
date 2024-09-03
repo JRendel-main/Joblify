@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useRouter } from 'next/router'
 import { Button } from '@/components/ui/button'
+import DashboardLayout from '@/components/DashboardLayout'
 
 const index = () => {
     const router = useRouter()
@@ -29,8 +30,9 @@ const index = () => {
     };
 
   return (
-    <div>Dashboard <Button variant="destructive" onClick={handleLogout}>Logout</Button>
-    </div>
+    <DashboardLayout>
+        
+    </DashboardLayout>
   )
 }
 
